@@ -5,9 +5,10 @@
 
 
 function zipList(list1, list2){
- let zipped = [];
-  for(let i = 0; i < list1.length; i++){
-     zipped.push(list1[i],list2[i]);
+  let zipped = [];
+  for (let i = 0; i < list1.length; i++){
+    zipped.push(list1[i]);
+    zipped.push(list2[i]);
   }
   return zipped;
 }
@@ -17,5 +18,5 @@ function zipListTheSimpleWay(list1, list2){
 
 test =[1, 2, 3];
 test1 =['a','b','c'];
-console.log(zipList(test,test1));
+console.log(zipList(test1,test));
 console.log(zipListTheSimpleWay(test,test1));
